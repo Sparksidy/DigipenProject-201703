@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 13.00
+# Visual Studio 2013
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CS350Framework", "CS350Framework\CS350Framework.vcxproj", "{077186ED-BB32-4653-8752-BEED8F9FF6A9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "CS350Framework\Math\Math.vcxproj", "{AF89D0CF-F888-4AA3-941D-2C191C1BF16D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{077186ED-BB32-4653-8752-BEED8F9FF6A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{077186ED-BB32-4653-8752-BEED8F9FF6A9}.Debug|Win32.Build.0 = Debug|Win32
+		{077186ED-BB32-4653-8752-BEED8F9FF6A9}.Release|Win32.ActiveCfg = Release|Win32
+		{077186ED-BB32-4653-8752-BEED8F9FF6A9}.Release|Win32.Build.0 = Release|Win32
+		{AF89D0CF-F888-4AA3-941D-2C191C1BF16D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF89D0CF-F888-4AA3-941D-2C191C1BF16D}.Debug|Win32.Build.0 = Debug|Win32
+		{AF89D0CF-F888-4AA3-941D-2C191C1BF16D}.Release|Win32.ActiveCfg = Release|Win32
+		{AF89D0CF-F888-4AA3-941D-2C191C1BF16D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

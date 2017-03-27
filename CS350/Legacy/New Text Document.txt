@@ -1,0 +1,10 @@
+85.38% SA Heuristic: (5/5) 
+Insertion: (20/20)
+Update: (5/5)
+Removal: (20/20)
+Rotation: (16/20)
+(-2) Recursively computing height on balance
+(-2) Recursively computing aabb on balance
+RayCasting: (10/10)
+SelfQuery: (20/20)
+DebugDrawing: (0/10) (-10) Not implemented Total Points: (111/130)

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{077186ED-BB32-4653-8752-BEED8F9FF6A9}</ProjectGuid>
+    <RootNamespace>CS350Framework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Platform)'=='Win32'">
+    <OutDir>$(SolutionDir)\Build\Out\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\Build\Int\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>SDL2-2.0.3\include;..\CS350Framework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4201;4100;4481</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Helpers.lib;SDL2.lib;SDL2main.lib;AntTweakBar.lib;Opengl32.lib;glu32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>SDL2-2.0.3\lib\x86;AntTweakBar\;OpenGL\;Helpers\Libs\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+        copy "AntTweakBar\AntTweakBar.dll" "$(OutDir)AntTweakBar.dll"
+        copy "SDL2-2.0.3\lib\x86\SDL2.dll" "$(OutDir)SDL2.dll"
+        call "$(ProjectDir)\CopyDataFiles" "$(ProjectDir)\DataFiles" "$(OutDir)"
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.hpp" />
+    <ClInclude Include="BspTree.hpp" />
+    <ClInclude Include="Camera.hpp" />
+    <ClInclude Include="Components.hpp" />
+    <ClInclude Include="DebugDraw.hpp" />
+    <ClInclude Include="DynamicAabbTree.hpp" />
+    <ClInclude Include="Geometry.hpp" />
+    <ClInclude Include="Gizmo.hpp" />
+    <ClInclude Include="Gjk.hpp" />
+    <ClInclude Include="Main\Support.hpp" />
+    <ClInclude Include="Mesh.hpp" />
+    <ClInclude Include="Model.hpp" />
+    <ClInclude Include="Shapes.hpp" />
+    <ClInclude Include="SimpleNSquared.hpp" />
+    <ClInclude Include="SimplePropertyBinding.hpp" />
+    <ClInclude Include="SpatialPartition.hpp" />
+    <ClInclude Include="UnitTests.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Assignment1Tests.cpp" />
+    <ClCompile Include="Assignment2Tests.cpp" />
+    <ClCompile Include="Assignment3Tests.cpp" />
+    <ClCompile Include="Assignment4Tests.cpp" />
+    <ClCompile Include="Assignment5Tests.cpp" />
+    <ClCompile Include="BspTree.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Components.cpp" />
+    <ClCompile Include="DebugDraw.cpp" />
+    <ClCompile Include="DynamicAabbTree.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="Gizmo.cpp" />
+    <ClCompile Include="Gjk.cpp" />
+    <ClCompile Include="Main\Main.cpp" />
+    <ClCompile Include="Main\Support.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Shapes.cpp" />
+    <ClCompile Include="SimpleNSquared.cpp" />
+    <ClCompile Include="SpatialPartition.cpp" />
+    <ClCompile Include="UnitTests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Math\Math.vcxproj">
+      <Project>{af89d0cf-f888-4aa3-941d-2c191c1bf16d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

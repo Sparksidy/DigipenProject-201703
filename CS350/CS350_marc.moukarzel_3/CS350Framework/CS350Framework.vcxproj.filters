@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="DebugDraw.cpp" />
+    <ClCompile Include="Components.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Gjk.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Support.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="BspTree.cpp">
+      <Filter>SpatialPartitions</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicAabbTree.cpp">
+      <Filter>SpatialPartitions</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleNSquared.cpp">
+      <Filter>SpatialPartitions</Filter>
+    </ClCompile>
+    <ClCompile Include="SpatialPartition.cpp">
+      <Filter>SpatialPartitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Gizmo.cpp" />
+    <ClCompile Include="Assignment2Tests.cpp">
+      <Filter>UnitTests</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment3Tests.cpp">
+      <Filter>UnitTests</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment1Tests.cpp">
+      <Filter>UnitTests</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment5Tests.cpp">
+      <Filter>UnitTests</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment4Tests.cpp">
+      <Filter>UnitTests</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTests.cpp">
+      <Filter>UnitTests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.hpp" />
+    <ClInclude Include="DebugDraw.hpp" />
+    <ClInclude Include="Components.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.hpp">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Gjk.hpp">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes.hpp">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Support.hpp">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="BspTree.hpp">
+      <Filter>SpatialPartitions</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicAabbTree.hpp">
+      <Filter>SpatialPartitions</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleNSquared.hpp">
+      <Filter>SpatialPartitions</Filter>
+    </ClInclude>
+    <ClInclude Include="SpatialPartition.hpp">
+      <Filter>SpatialPartitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.hpp" />
+    <ClInclude Include="Gizmo.hpp" />
+    <ClInclude Include="SimplePropertyBinding.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitTests.hpp">
+      <Filter>UnitTests</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Components">
+      <UniqueIdentifier>{f71136ed-df71-459a-95c2-d0e664baefcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{32eb350f-3960-4507-b68f-ac4d1f9e97f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{7e187074-bb14-4496-a183-df7385e21753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpatialPartitions">
+      <UniqueIdentifier>{285050c4-0ab8-4653-9b30-c9a17bf47276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests">
+      <UniqueIdentifier>{fcd64e03-8390-4514-be81-ba715278acfe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

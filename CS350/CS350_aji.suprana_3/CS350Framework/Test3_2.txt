@@ -1,0 +1,26 @@
+
+////////////////////////////////////////////////////////////
+DynamicAabbTreeStructure2
+////////////////////////////////////////////////////////////
+  Test Spatial Partition Structure:
+    Depth(0) ClientData(00000000) Aabb((-4.05, -0.05, -5.50), (2.05, 1.05, 5.50))
+    Depth(1) ClientData(00000000) Aabb((-4.05, -0.05, -5.50), (2.05, 1.05, 5.50))
+    Depth(2) ClientData(00000000) Aabb((-4.05, 0.00, -5.50), (-2.95, 0.11, 5.50))
+    Depth(2) ClientData(00000001) Aabb((0.95, -0.05, -1.10), (2.05, 1.05, 1.10))
+    Depth(1) ClientData(00000000) Aabb((-2.05, 0.00, -1.10), (-0.95, 0.31, 1.10))
+    Depth(2) ClientData(00000002) Aabb((-2.05, 0.00, -1.10), (-0.95, 0.11, 1.10))
+    Depth(2) ClientData(00000003) Aabb((-2.05, 0.20, -1.10), (-0.95, 0.31, 1.10))
+  Test Spatial Partition Structure:
+    Depth(0) ClientData(00000000) Aabb((-4.05, -0.05, -5.50), (2.05, 1.05, 5.50))
+    Depth(1) ClientData(00000000) Aabb((-4.05, -0.05, -5.50), (2.05, 1.05, 5.50))
+    Depth(2) ClientData(00000000) Aabb((-4.05, 0.00, -5.50), (-2.95, 0.11, 5.50))
+    Depth(2) ClientData(00000001) Aabb((0.95, -0.05, -1.10), (2.05, 1.05, 1.10))
+    Depth(1) ClientData(00000003) Aabb((-2.05, 0.20, -1.10), (-0.95, 0.31, 1.10))
+  Test Spatial Partition Structure:
+    Depth(0) ClientData(00000000) Aabb((-4.05, -0.05, -5.50), (2.05, 1.05, 5.50))
+    Depth(1) ClientData(00000000) Aabb((-4.05, 0.00, -5.50), (-2.95, 0.11, 5.50))
+    Depth(1) ClientData(00000001) Aabb((0.95, -0.05, -1.10), (2.05, 1.05, 1.10))
+  Test Spatial Partition Structure:
+    Depth(0) ClientData(00000001) Aabb((0.95, -0.05, -1.10), (2.05, 1.05, 1.10))
+  Test Spatial Partition Structure:
+    Empty

@@ -1,0 +1,5 @@
+TREENAME(Flocking)
+TREENODE(C_Flocking, 0)
+TREENODE(L_Cohesion, 1)
+TREENODE(L_Separation, 1)
+TREENODE(L_Alignment, 1)
